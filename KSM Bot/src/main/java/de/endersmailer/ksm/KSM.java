@@ -13,7 +13,7 @@ public class KSM {
     public static JDA jda;
 
     public static void main(String[] args) throws LoginException, InterruptedException {
-        JDABuilder builder = JDABuilder.createDefault("ODA3NjE4MzUyMDM3NjI1ODY2.YB6nMw.8xT6xjqxg44ivteAxntVsWIoatw");
+        JDABuilder builder = JDABuilder.createDefault(Config.getToken());
         builder.disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);
         builder.setBulkDeleteSplittingEnabled(false);
         builder.setCompression(Compression.NONE);
